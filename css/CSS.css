@@ -100,10 +100,13 @@ h5 a:hover{
 }
 
 
-.logan {
+.slogan {
     display:flex;
     justify-content: flex-start;
     background-color: #3c3731;
+}
+.slogan img{
+    width: 32%;
 }
 section{
     display:flex;
