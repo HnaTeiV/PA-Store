@@ -1,0 +1,65 @@
+<a href="index1.html" class="product">
+        <div >
+            <img src="IMG/product/Pink.jpg" />
+            <h3>Nike air zoom tempo</h3>
+            <h2>4.990.000đ</h2></div>
+        </a>            
+        <a href="index2.html" class="product">
+            <div >
+                <img src="IMG/product/JordanXXXIV/air-jordan-xxxiv-low-pf-basketball-shoe-pL6JX3.jpg" />
+                <h3>Nike air zoom tempo</h3>
+                <h2>4.990.000đ</h2></div>
+            </a>      
+        <a href="index1.html" class="product">
+                <div >
+                <img src="IMG/product/Pink.jpg" />
+                <h3>Nike air zoom tempo</h3>
+                <h2>4.990.000đ</h2></div>
+            </a>      
+        <a href="index1.html" class="product">
+                <div >
+                    <img src="IMG/product/JordanXXXIV/air-jordan-xxxiv-low-pf-basketball-shoe-pL6JX3.jpg" />
+                <h3>Nike air zoom tempo</h3>
+                <h2>4.990.000đ</h2></div>
+        </a>
+        <figure>
+            <img src="IMG/product/Pink.jpg" alt="product"/>
+            <figcaption>
+                <h3>Nike air zoom tempo</h3>
+                <h2>4.990.000đ</h2>
+            </figcaption>
+        </figure>
+        <div class="figures">
+            <figure class="figure">
+                <img src="IMG/product/Pink.jpg" alt="product"/>
+                <figcaption>
+                    <h3>Nike air zoom tempo</h3>
+                    <h2>4.990.000đ</h2>
+                </figcaption>
+            </figure>
+            
+            <figure>
+                <img src="IMG/product/JordanXXXIV/air-jordan-xxxiv-low-pf-basketball-shoe-pL6JX3.jpg" />
+                    <figcaption>
+                        <h3>Jordan XXXIV</h3>
+                        <h2>5.490.000đ</h2>
+                    </figcaption>
+                </figure>
+            
+            
+            <figure>
+                    <img src="IMG/product/Pink.jpg" alt="product"/>
+                    <figcaption>
+                        <h3>Nike air zoom tempo</h3>
+                        <h2>4.990.000đ</h2>
+                    </figcaption>
+                </figure>
+            
+                <figure>
+                    <img src="IMG/product/JordanXXXIV/air-jordan-xxxiv-low-pf-basketball-shoe-pL6JX3.jpg" />
+                        <figcaption>
+                            <h3>Jordan XXXIV</h3>
+                            <h2>5.490.000đ</h2>
+                        </figcaption>
+                    </figure>
+            </div>
