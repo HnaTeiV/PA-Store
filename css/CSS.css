@@ -9,6 +9,7 @@ body{
     justify-content: space-between;
     height:125px;
     border-bottom:1px solid black;
+    
 }
 .types{
     display:flex;
@@ -105,8 +106,36 @@ h5 a:hover{
     justify-content: flex-start;
     background-color: #3c3731;
 }
+.title{
+    border-bottom: 5px solid black;
+}
+.title span{
+    background-color: black;
+    color:white;
+    padding-right:5px;
+    position:relative;
+}
+.title span::after{
+    content:"";
+    border-style: solid;
+    border-width:25px;
+    border-color:transparent transparent black black;
+    position:absolute;
+    left:100%;
+}
 section{
     display:flex;
+}
+.typeShoe{
+    border: 2px solid black;
+    height:330px;
+    padding:5px 5px;
+    margin-left:5px;
+    border-radius: 5px;
+}
+.menuProduct{
+    display:flex;
+    flex-wrap: wrap;
 }
 a.product{
     border:2px solid black;
@@ -114,6 +143,7 @@ a.product{
     border-radius:5px;
     margin:10px;
     color:black;
+    
 }
 div.productTitle>img{
     width:384px;

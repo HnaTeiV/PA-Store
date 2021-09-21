@@ -63,3 +63,27 @@
                         </figcaption>
                     </figure>
             </div>
+
+            <div class="menu">
+                <div><a href="index.html">
+                    <img src="IMG/nike-logo.jpg" class="logo">
+                    </a>
+                    <h5><a href="index.html">PA STORE</a></h5>
+                    </div>
+                    <nav>
+                        <ul class="types">
+                            <li class="type"><a href="#">Category</a>
+                            <ul class="sub-type">
+                                <li><a href="#">Basketball</a></li>
+                                <li><a href="#">Running</a></li>
+                                <li><a href="#">Jordan Brand</a></li>
+                            </ul>
+                            <li class="type"><a href="#">Bảo Dưỡng</a></li>
+                            <li class="type"><a href="#">Liên Hệ</a></li>
+                            </ul>
+                    </nav>
+                <div class="find">
+                    <input type="search" placeholder="Tìm kiếm..."/>
+            
+                </div>
+            </div>
