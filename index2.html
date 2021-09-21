@@ -4,42 +4,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>PA Store</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-  <link href="css/CSS.css" rel="stylesheet" />
-<script src="js/main.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="shortcut icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSyTZXRB6ihho_VzF8k_USJoT6BGQ4Wd7fqug&usqp=CAU" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link href="css/CSS.css" rel="stylesheet" />
+    <script src="js/main.js"></script>
 
 </head>
 <body onload="init()">
+    <!-- GO TO TOP -->
+    <div>
+        <a id="goToTop" href="javascript:;"><i class="fas fa-chevron-up"></i></a>
+   </div>
+   <header>
     <div class="menu">
         <div><a href="index.html">
-            <img src="IMG/nike-logo.jpg" class="logo">
-            </a>
-            <h5><a href="index.html">PA STORE</a></h5>
-            </div>
-            <nav>
-                <ul class="types">
-                    <li class="type"><a href="#">Category</a>
-                    <ul class="sub-type">
-                        <li><a href="#">Basketball</a></li>
-                        <li><a href="#">Running</a></li>
-                        <li><a href="#">Jordan Brand</a></li>
-                    </ul>
-                    <li class="type"><a href="#">Bảo Dưỡng</a></li>
-                    <li class="type"><a href="#">Liên Hệ</a></li>
-                    </ul>
-            </nav>
+        <img src="IMG/nike-logo.jpg" class="logo">
+        </a>
+        <h5><a href="index.html">PA STORE</a></h5>
+        </div>
+        <nav>
+            <ul class="types">
+                <li class="type"><a href="#">Category</a>
+                <ul class="sub-type">
+                    <li><a href="#">Basketball</a></li>
+                    <li><a href="#">Running</a></li>
+                    <li><a href="#">Jordan Brand</a></li>
+                </ul>
+                <li class="type"><a href="#">Bảo Dưỡng</a></li>
+                <li class="type"><a href="#">Liên Hệ</a></li>
+            </ul>
+        </nav>
         <div class="find">
-            <input type="search" placeholder="Tìm kiếm..."/>
-    
+            <i class="fas fa-search"></i>
+            <input type="text" id="kw" placeholder="Tìm Kiếm" />
+            <input type="button" id="btnButton" onclick="search()" value="Tìm" />   
         </div>
     </div>
+</header>
    
     <section >
         <div class="title1">
@@ -77,27 +85,22 @@
         <img class="mediumCircle" src="IMG/product/esclipse/Medium.svg"/>
                 
     </section>
+    <h1 class="tag"><span>THÔNG TIN LIÊN HỆ</span></h1>
+
     <footer>
-        <h1>LIÊN HỆ</h1>
-        <hr>
-        <p>Các phương thức liên hệ</p>
-        
+        <br>
         <div class="col50">
-            <h4>Địa chỉ cửa hàng:</h4>
-            <ul>
-                <li>............</li>
-                <li>............</li>
+            <h3>Thông tin liên lạc:</h3>
+            <ul class="contact">
+                <li><i class="fas fa-phone-volume"></i> Hotline: 1234567890</li>
+                <li><i class="fab fa-instagram"></i> Instagram: EelNuyh</li></a>
+                <li><i class="fas fa-envelope"></i> Email: eelNuyh@gmail.com</li></a>
+                <li><i class="fab fa-facebook"></i> Facebook: EelNuyh</lia></a>
             </ul>
         </div>
-        <div class="col50>"></div>
         <div class="col50">
-            <h4>Thông tin liên lạc:</h4>
-            <ul>
-                <li>hotline:1234567890</li>
-                <li>Facebook:EelNuyh</li>
-            </ul>
+            <h3>Địa chỉ cửa hàng:</h3>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3918.9352036098157!2d106.67562381431739!3d10.816270761415769!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x317528e195f816b7%3A0xfb5c0101490d8870!2zMzcxIE5ndXnhu4VuIEtp4buHbSwgUGjGsOG7nW5nIDMsIEfDsiBW4bqlcCwgVGjDoG5oIHBo4buRIEjhu5MgQ2jDrSBNaW5oLCBWaeG7h3QgTmFt!5e0!3m2!1svi!2s!4v1632076717037!5m2!1svi!2s" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
         </div>
-        <div class="col50>"></div>
-        
     </footer>
 </body>
