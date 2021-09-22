@@ -1,11 +1,10 @@
-/* TESTTTTTTTTTTTT */
+
 *{
     box-sizing: border-box;
     margin: 0;
 }
 body{
     font-family: 'Roboto', sans-serif;
-    
 }
 .menu{
     display:flex;
@@ -135,6 +134,9 @@ h5 a:hover{
 }
 section{
     display:flex;
+    flex-wrap: wrap;
+    max-width: 100%;
+    padding: 0 10%;
     
 }
 .typeShoe{
@@ -154,16 +156,45 @@ a.product{
     border-radius:5px;
     margin:10px;
     color:black;
-    width:20%;
-
+    width:30%;
 }
+
+a.product:hover{
+    border:2px solid #d63031;
+    transform: scale(1.01);
+    
+}
+
+.productTitle{
+    height: 547px;
+    position: relative;
+}
+
 div.productTitle>img{
     width:100%;
-    height:400px;
+}
+
+.productTitle h3{
+    margin-top:  4px;
+    font-weight: 500;
+    text-align: center;
+    
+}
+
+.price {
+    position: absolute;
+    background-color: #b2bec3;
+    margin-bottom: -10px;
+    width: 100%;
+    bottom: 10px;
+    font-size: 36px;
+    font-weight: 600;
+    text-align: center;
+    border-top: 1px solid black;
 }
 
 div.col50{
-    
+    float: flex;
     width:50%;
 }
 div.col50 >ul{
@@ -311,7 +342,6 @@ h1.tag > span::after {
 }
 footer{
     max-height: max-content;
-    
     display:flex;
     justify-content: center;
     background-color: black;
@@ -319,6 +349,7 @@ footer{
 }
 .contact{
     font-size: 20px;
+    padding-top: 30px;
 }
 ul.contact{
     display:flex;
