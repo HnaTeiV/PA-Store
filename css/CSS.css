@@ -106,15 +106,14 @@ h5 a:hover{
 
 
 .slogan {
-    display:inline-block;
-    max-width: 100%;
-    padding: auto;
-    background-color: #3c3731;
-    margin: 10px 0 ;
-    justify-items:auto;
+    display:flex;
+    justify-content: space-around;
+    background-color: #9e9e9e;
+    margin:5px 0;
 }
 .slogan img{
     width: 33%
+    
 }
 .title{
     border-bottom: 5px solid black;
@@ -163,7 +162,7 @@ div.productTitle>img{
 }
 
 div.col50{
-    float:left;
+    
     width:50%;
 }
 div.col50 >ul{
@@ -239,10 +238,10 @@ h3,h2{
     padding-left:5px;
 }
 .mediumCircle {
-    position:absolute;
+    position:fixed;
     z-index:-1;
-    bottom:0;
-    right:0;
+    bottom:20%;
+    right:-10%;
     opacity:1;
     height:100%;
 }
@@ -311,8 +310,46 @@ h1.tag > span::after {
 }
 footer{
     max-height: max-content;
-    margin: 0 10%;
+    
+    display:flex;
+    justify-content: center;
+    background-color: black;
+    color:white;
 }
 .contact{
     font-size: 20px;
+}
+ul.contact{
+    display:flex;
+    list-style-type: none;
+}
+ul.contact li{
+    margin:0 10px;
+}
+
+.col60{
+    width:60%;
+    margin-left:auto;
+    padding-left:10%;
+    padding-top: 10px;
+    align-items: center;
+}
+div.col60{
+    display:flex;
+}
+div.col60 ul{
+    list-style-type: none;
+    margin:0 30px;
+}
+.col40{
+    width:40%;
+    align-content: flex-end;
+    padding:0 10%;
+}
+ul.contact li{
+    background: #7e7e7e;
+    border-radius:40px;
+    font-size: 2rem;
+    padding:0 10px;
+    color:black
 }
