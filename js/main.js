@@ -41,6 +41,7 @@ $(document).ready(function(){
        $("#goToTop").click(function(){
            $("html,body").animate({scrollTop:0},1000)
     })
+<<<<<<< HEAD
 }
 )
 
@@ -59,3 +60,14 @@ function buy(){
             event.stopPropagation()
         })
 }
+=======
+   $("nav ul.types li a").click(function(){
+       var link=$(this).attr("href")
+       $("html, body").animate({
+           scrollTop: $(link).prop("offsetTop")+"px"
+       },1000)
+   })
+    
+   
+})
+>>>>>>> 619f9b494b0a4881dad157dd958cfd12f1ebf863

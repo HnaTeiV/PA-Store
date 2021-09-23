@@ -178,6 +178,8 @@ a.product:hover{
 
 div.productTitle>img{
     width:100%;
+    position: absolute;
+    height:100%;
 }
 
 .productTitle h3{
