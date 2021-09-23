@@ -18,9 +18,8 @@
     <script src="js/main.js"></script>
 </head>
 <body onload="init()">
-     <!-- GO TO TOP -->
-     <div><a id="goToTop" href="javascript:;"><i class="fas fa-chevron-up"></i></a></div>
-     
+    <!-- GO TO TOP -->
+    <div><a id="goToTop" href="javascript:;"><i class="fas fa-chevron-up"></i></a></div>  
     <header>
         <div class="menu">
             <div><a href="index.html">
@@ -48,9 +47,9 @@
         </div>
     </header>
     <section >
-        <div class="title1">
+        <div class="title1 col50">
             <br>
-            <h4> Nike Air Zoom Tempo Next</h4>
+            <h2 class="b-text"> Nike Air Zoom Tempo Next</h2>
             <div class="color">
                 <img src="IMG/product/Pink.jpg" alt="pink"/>
                 <img src="IMG/product/Black.jpg" alt="Black" />
@@ -68,21 +67,52 @@
                         <li><a  href="javascrip:;" >US:9</a></li>
                         <li><a  href="javascrip:;" >US:9.5</a></li>
                         <li><a  href="javascrip:;" >US:10</a></li>
-
                     </ul>
+                </div>
                 <div class="buy">
-                    <a rel="buy" href="#">Mua</a>
-                </div>
+                    <button onclick="buy()" class="buy-button js-buy">Buy</button>
                 </div>
             </div>
-            </div>
+        </div>
             <div class="showProduct" >
                 <img src="IMG/product/Pink.jpg" alt="pink" id="mainImage"/>
             </div>
             
             <img class="mediumCircle" src="IMG/product/esclipse/Medium.svg"/>
             
-        </section>
+    </section>
+        <br>
+       <!-- Modal -->
+    <div class="modal">
+        <div class="modal-container js-modal-container">
+            <div class="modal-close">
+                <i class="fas fa-times"></i>
+            </div>
+            <div class="modal-header">
+                <i class="fas fa-suitcase"> </i> Xác nhận thông tin khách hàng
+            </div>
+            <div class="modal-body">
+                <label for="lb1" class="modal-lable">
+                    <i class="fas fa-user"></i>
+                    Họ và tên:
+                </label>
+                <input id="lb1" type="text" class="modal-input" placeholder="...">
+                <label for="lb2" class="modal-lable">
+                    <i class="fas fa-mobile-alt"></i>
+                    Số điện thoại:
+                </label>
+                <input id="lb2" type="text" class="modal-input" placeholder="...">
+                <button id="buy-ticket">
+                    Xác nhận <i class="fas fa-check"></i>
+                </button>
+            </div>
+            <div class="modal-footer">
+                <p class="modal-help">
+                    Need <a href="#">help?</a>
+                </p>
+            </div>
+        </div>
+    </div>
     <footer>
         <div class="col60">
             <ul>
@@ -106,7 +136,6 @@
                 <li>Investors</li>
             </ul>
         </div>
-
         <div class="col40">
             <ul class="contact">
                 <li><i class="fas fa-phone-volume"></i> </li>

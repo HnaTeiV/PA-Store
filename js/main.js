@@ -41,4 +41,21 @@ $(document).ready(function(){
        $("#goToTop").click(function(){
            $("html,body").animate({scrollTop:0},1000)
     })
-})
+}
+)
+
+function buy(){
+        const modal  = document.querySelector('.modal')
+        const closeModal = document.querySelector('.modal-close')
+        const modalContainer = document.querySelector('.js-modal-container')
+        
+        modal.classList.add('open')
+        function closeBuyTickets(){
+            modal.classList.remove('open')
+        }
+        closeModal.addEventListener('click',closeBuyTickets)
+        modal.addEventListener('click',closeBuyTickets)
+        modalContainer.addEventListener('click',function(event){
+            event.stopPropagation()
+        })
+}
