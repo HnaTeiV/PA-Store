@@ -21,7 +21,36 @@
 <body onload="init()">
      <!-- GO TO TOP -->
      <div><a id="goToTop" href="javascript:;"><i class="fas fa-chevron-up"></i></a></div>
-     
+     <div class="modal">
+        <div class="modal-container js-modal-container">
+            <div class="modal-close">
+                <i class="fas fa-times"></i>
+            </div>
+            <div class="modal-header">
+                <i class="fas fa-shoe"> </i> Đăng Nhập
+            </div>
+            <div class="modal-body">
+                <label for="lb1" class="modal-lable">
+                    <i class="fas fa-user"></i>
+                    Họ và tên:
+                </label>
+                <input id="lb1" type="text" class="modal-input" placeholder="...">
+                <label for="lb2" class="modal-lable">
+                    <i class="fas fa-lock"></i>
+                    Mật khẩu:
+                </label>
+                <input id="lb2" type="text" class="modal-input" placeholder="...">
+                <button id="buy-ticket">
+                    Xác nhận <i class="fas fa-check"></i>
+                </button>
+            </div>
+            <div class="modal-footer">
+                <p class="modal-help">
+                    Need <a href="#">help?</a>
+                </p>
+            </div>
+        </div>
+    </div>
     <header>
         <div class="menu">
             <div><a href="index.html">
@@ -44,7 +73,8 @@
             <div class="find">
                 <i class="fas fa-search"></i>
                 <input type="text" id="kw" placeholder="Tìm Kiếm" />
-                <input type="button" id="btnButton" onclick="search()" value="Tìm" />   
+                <input type="button" id="btnButton" onclick="search()" value="Tìm" />
+                <a href="#" onclick="login()" class="login"><i class="fas fa-user"></i></a>
             </div>
         </div>
     </header>

@@ -664,3 +664,12 @@ ul.contact li{
         opacity: 1;
     }
 }
+.login{
+    font-size: 1rem;
+    opacity: 0.7;
+    color:black;
+}
+.login:hover{
+    opacity:1;
+    color:black;
+}
