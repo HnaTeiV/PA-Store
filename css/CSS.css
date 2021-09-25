@@ -3,6 +3,79 @@
     box-sizing: border-box;
     margin: 0;
 }
+.wid40{
+    display: flex;
+    flex: 2;
+    justify-content:space-between;
+}
+
+.wid40 > input{
+    width: 80%;
+}
+body{
+    width: 100%;
+    
+}
+main{
+    display: flex;
+    width: 100%;
+    padding: 0 10%;
+}
+.about{
+    padding: 10px;
+    background-color: lightgrey;
+    border-radius: 10px;
+    border: 2px solid black;
+    text-align: left;
+}
+.about .info{
+    padding-top: 10px;
+    text-align: center;
+}
+.about img{
+    width: 100%;
+}
+.feedBack{
+    padding: 10px;
+}
+.feedBack input[type=text]{
+    padding: 16px;
+    width: 100%;
+    border: 2px solid black;
+    border-radius: 4px;
+    margin: 8px 0;
+    outline: none;
+    transition: .3s;
+}
+.feedBack input[type=text]:focus{
+    border-color: dodgerblue;
+    box-shadow: 0 0 8px 0 dodgerblue;
+}
+.btnConfirm{
+    display: block;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: white;
+    width: 120px;
+    justify-content: center;
+    text-align: center;
+    margin: 0 auto;
+    background-color:lightblue;
+    padding: 10px;
+    border-radius: 10px;
+    outline: none;
+}
+.btnConfirm:hover{
+    background-color:dodgerblue;
+
+}
+.btnConfirm:focus{
+
+    outline: none;
+}
+.check{
+    background-color: lightgray;
+}
 .b-text{
     font-weight: 600px;
 }
@@ -253,13 +326,15 @@ ul.selectSize>li>a{
 ul.selectSize>li>a:hover{
     text-decoration: none;
     background-color: lightgray;
-    color:black;
+    color:black;    
     display:block;
+    cursor: pointer;
 }ul.selectSize>li:hover{
     text-decoration: none;
     background-color: lightgray;
     color:black;
     display:block;
+    cursor: pointer;
 }
 
 .buy-button{
@@ -352,6 +427,7 @@ h1.tag > span::after {
     bottom: 0px;
 }
 footer{
+    margin-top: 20px    ;
     max-height: max-content;
     display:flex;
     justify-content: center;
