@@ -128,6 +128,7 @@ a.product{
     margin:10px;
     color:black;
     width:30%;
+    z-index: -1;
 }
 div.productTitle>img{
     width:100%;
@@ -223,11 +224,13 @@ h3,h2{
 .carousel-item{
     height:32rem;
     background:#777;
+    z-index: -1;
 }
 .carousel-inner img {
     width: 100%;
     height: 100%;
-  }
+    z-index: -1;
+}
 
 #goToTop {
     text-decoration: none;
@@ -287,4 +290,156 @@ footer{
 }
 .contact{
     font-size: 20px;
+<<<<<<< Updated upstream
+=======
+    padding-top: 30px;
+}
+ul.contact{
+    display:flex;
+    list-style-type: none;
+}
+ul.contact li{
+    margin:0 10px;
+}
+
+.col60{
+    width:60%;
+    margin-left:auto;
+    padding-left:10%;
+    padding-top: 10px;
+    align-items: center;
+}
+div.col60{
+    display:flex;
+}
+div.col60 ul{
+    list-style-type: none;
+    margin:0 30px;
+}
+.col40{
+    width:40%;
+    align-content: flex-end;
+    padding:0 10%;
+}
+ul.contact li{
+    background: #7e7e7e;
+    border-radius:40px;
+    font-size: 2rem;
+    padding:0 10px;
+    color:black
+}
+                /* MODAL */
+.modal{
+    position: fixed;
+    top : 0;
+    right :0 ;
+    left : 0 ;
+    bottom:0;
+    background-color: rgba(0,0,0,0.3);
+    display: none;
+    align-items: center;
+    justify-content: center ;
+    
+}
+
+.modal.open{
+    display: flex;
+}
+
+.modal-container{
+    background-color: #fff;
+    width: 900px;
+    max-width: calc(100% - 32px);
+    min-height: 200px;
+    position: relative;
+    animation: showModal ease .5s;
+}
+.modal-header{
+    background-color: #2980b9;
+    height: 130px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    color: white;
+}
+.fa-suitcase{
+    margin: 0 10px;
+}
+.modal-close{
+    position: absolute;
+    right : 0;
+    top : 0 ;
+    color: white;
+    padding: 12px;
+}
+.modal-close:hover{
+    color: black;
+    background-color: #fff;
+    cursor: pointer;
+    border-bottom-left-radius: 10%;
+}
+.modal-body{
+    padding: 16px;
+}
+.modal-lable{
+    display: block  ;
+    font-size: 15px;
+}
+.modal-input{
+    font-size: 15px;
+    padding: 10px;
+    width: 100%;
+    margin: 10px 0;
+    border: 1px solid #333;
+}
+#buy-ticket{
+    width: 100%;
+    font-size: 15px;
+    background: #2980b9;
+    color: white;
+    border: none;
+    padding: 16px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+#buy-ticket:hover{
+    background-color: #ccc;
+    color: #333;
+    cursor: pointer;
+}
+.fa-check{
+    margin: 0 2px;
+}
+.modal-footer{
+    padding: 16px;
+    text-align: right;
+    
+}
+.modal-help a{
+    color: rgb(33, 150, 243);
+}
+
+
+@keyframes showModal {
+    from{
+        transform: translateX(-80px);
+        opacity: 0;
+    }
+    to{
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+
+.login{
+    color:black;
+    font-size: 1rem;
+    font-weight: bolder;
+    opacity: 0.7;
+}
+.login:hover{
+    opacity:1;
+    color:black;
+>>>>>>> Stashed changes
 }
