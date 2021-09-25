@@ -2,6 +2,95 @@
 *{
     box-sizing: border-box;
     margin: 0;
+}.inputContent{
+    max-height: 200px;
+}
+.tips h1{
+    margin-top: 20px;
+    padding: 20px 0px;
+    border-top: 2px black solid;
+    font-weight: bold;
+}
+
+.tips .list{
+    text-decoration: none;
+    list-style-type: none;
+    background-color:lightgrey;
+    border-radius:10px ;
+    padding: 0px;
+}
+.tips .list li{
+    padding: 13px 20px;
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.tips .list li:hover {
+    background-color: lightslategray;
+    border-radius: 10px;
+}
+.tips a {
+    color:black;
+    font-weight: bold;
+    text-decoration: none;
+}
+.services{
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 10px;
+}
+.btnService{
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform : translateX(-50%);
+    display: inline-block;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: white;
+    width: 120px;
+    text-align: center;
+    margin: 0 auto;
+    background-color:lightblue;
+    padding: 10px;
+    border-radius: 10px;
+    outline: none;
+
+}
+.service{
+    width: 30%;
+    margin: 10px;
+    border-radius: 10px;
+    background-color: lightgray;
+    position: relative;
+    height: 400px;
+}
+.service:hover{
+    cursor: pointer;
+    background-color: rgba(0,0,0,0.3);
+}
+.service .btnService:hover{
+    background-color: dodgerblue;
+}
+.service h4 {
+    text-align: center;
+    font-weight: bold;
+    margin: 4px;
+}
+.service h5{
+    padding: 4px;
+}
+.service p{
+    margin: 4px;
+}
+.service img {
+    width: 100%;
+}
+.col70{
+    width: 70%;
 }
 .wid40{
     display: flex;
