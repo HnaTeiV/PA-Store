@@ -177,8 +177,7 @@ body{
 .menu{
     display:flex;
     justify-content: space-between;
-    border-bottom:1px solid black;
-    
+    border-bottom:1px solid black;  
 }
 .types{
     display:flex;
@@ -600,7 +599,7 @@ ul.contact li{
     font-size: 30px;
     color: white;
 }
-.fa-suitcase{
+.fa-shopping-cart,.fa-hand-point-right{
     margin: 0 10px;
 }
 .modal-close{
@@ -758,4 +757,48 @@ ul.contact li{
         margin:0 0 !important;
     }
     
+}
+
+@media screen and (max-width: 1024px){
+   .menu{
+       display: flex;
+       flex-direction: column;
+   }
+   nav{
+       float: left;
+       line-height: 4;
+       padding: 0 ;
+       padding-right: 80px;
+   }
+   h1.tag > span::after {
+       border-width: 30px;
+    }
+
+   .find{
+    position: absolute;
+    line-height: 4;
+    justify-content: end;
+    text-align: right;
+    top: 10px;
+    right:10px;
+   }
+   a.product {
+    width: 47%;
+   }
+   .contact{
+    display: flex;
+    list-style-type: none;
+    margin-left: -60px;
+    flex-direction: row;
+   }
+   .contact li{
+    background: #7e7e7e;
+    border-radius: 50%;
+    font-size: 30px;
+    width: 45px;
+    margin: 10px;
+    width: 3rem;
+    padding: 2px 7px;
+    color: black;
+    }
 }
