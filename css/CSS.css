@@ -3,11 +3,11 @@
     box-sizing: border-box;
     margin: 0;
 }.inputContent{
-    max-height: 200px;
+    max-height: 12em;
 }
 .tips h1{
-    margin-top: 20px;
-    padding: 20px 0px;
+    margin-top: 1.1em;
+    padding: 1.1em 0em;
     border-top: 2px black solid;
     font-weight: bold;
 }
@@ -20,8 +20,8 @@
     padding: 0px;
 }
 .tips .list li{
-    padding: 13px 20px;
-    font-size: 14px;
+    padding: 0.8em 1.25em;
+    font-size: 1em;
     font-weight: bold;
     text-decoration: none;
     overflow: hidden;
@@ -44,29 +44,29 @@
 }
 .btnService{
     position: absolute;
-    bottom: 20px;
+    bottom: 1.1em;
     left: 50%;
     transform : translateX(-50%);
     display: inline-block;
-    font-size: 16px;
+    font-size: 1em;
     font-weight: bold;
     background-color: white;
-    width: 120px;
+    width: 8em;
     text-align: center;
     margin: 0 auto;
     background-color:lightblue;
-    padding: 10px;
+    padding: 0.625em;
     border-radius: 10px;
     outline: none;
 
 }
 .service{
     width: 30%;
-    margin: 10px;
+    margin: 0.625em;
     border-radius: 10px;
     background-color: lightgray;
     position: relative;
-    height: 400px;
+    height: 25em;
 }
 .service:hover{
     cursor: pointer;
@@ -101,6 +101,7 @@
 .wid40 > input{
     width: 80%;
 }
+/* Lien he*/
 body{
     width: 100%;
     
@@ -171,10 +172,11 @@ main{
 body{
     font-family: 'Roboto', sans-serif;
 }
+
+/* Trang chu */
 .menu{
     display:flex;
     justify-content: space-between;
-    height:125px;
     border-bottom:1px solid black;
     
 }
@@ -247,7 +249,6 @@ h5 a:hover{
 
 }
 .sub-type {
-    position: relative;
     text-decoration: none;
     list-style: none;
     display:none;
@@ -268,6 +269,9 @@ h5 a:hover{
 }
 .sub-type li a:hover{
     color: #d63031;
+}
+.sub-type li{
+    background-color:#fcfcfc;
 }
 
 
@@ -672,4 +676,86 @@ ul.contact li{
 .login:hover{
     opacity:1;
     color:black;
+}
+@media screen and (max-width: 400px) {
+    
+    div.menu{
+        display:flex;
+        flex-direction: column  ;
+        text-align: center;
+        border-bottom: none;
+    }
+    
+    .menu>div>a>img{
+        margin:auto;
+    }
+    nav ul.types{
+        display:flex;
+        flex-direction: column;
+        margin:0;
+        padding:0;
+    }
+    ul.types li{
+        padding:0;
+        margin:0;
+        position: relative;
+    }
+    ul.types li a{
+        padding:0;
+        display:block;
+    }
+    .type{
+        position:absolute;
+    }
+    .sub-type{
+        position:relative;
+    }
+    .type:hover .type{
+        position:static;
+    }
+    .menu li {
+        border-top: 1px solid black;
+    }
+    .menu li:last-child{
+        border-bottom: 1px solid black;
+    }
+    .slogan{
+        position:static;
+    }
+    .sub-type li:last-child{
+        border-bottom:none;
+    }
+    .sub-type li a{
+        background-color:#fcfcfc;
+    }
+    span {
+        padding: 0.3em 0.1em;
+        text-align: left;
+        font-size: 0.4em;
+        width:10em;
+    }
+    section{
+        flex-direction: column;
+    }
+    a.product{
+        width:95%;
+    }
+    .col60{
+        font-size: 0.8rem;
+        padding:0 0;
+        margin: 0 0;
+        width:100%;
+    }
+    .col60 ul li{
+        padding: 0 0;
+        
+    }
+    .col40{
+        width:0;
+    }
+    .col60 ul{
+        
+        margin:0 0 !important;
+    }
+    
 }
