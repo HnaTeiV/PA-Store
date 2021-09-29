@@ -13,6 +13,8 @@ function init(){
     this.setAttribute("style","background-color: lightgray")
     }
 }
+
+
 function search(){
 var k=document.getElementById("kw")
 if(k!=null){
@@ -26,8 +28,8 @@ if(k!=null){
     setTimeout(function() {
         var product = document.querySelectorAll(".productTitle")
             for (var i = 0; i < product.length; i++)
-                product[i].style.color="none"
-        }, 2000)
+                product[i].style.color="black"
+        }, 5000)
     }  
 }            
 $(document).ready(function(){

@@ -63,42 +63,42 @@
                 <h5>Làm sạch bằng tay từ bề mặt, đế, dây đến lòng giày,
                     Dung dịch riêng biệt cho từng chất liệu.</h5>
                 <p>Giá: 100,000đ/đôi</p>
-                <button class="btnService">Sử dụng</button>
+                <button onclick="buy()" class="btnService">Sử dụng</button>
             </div>
             <div class="service">
                 <img src="https://media.istockphoto.com/photos/men-in-bicycle-store-picture-id620697548?b=1&k=20&m=620697548&s=170667a&w=0&h=dU7V9bajA-k4qS11fthqYtuJLf8EgMqLOMeGXfYNwJ4=" alt="test">
                 <h4>VỆ SINH + CHIẾU TIA UV</h4>
                 <h5>Khử sạch vi khuẩn còn sót trong giày, loại bỏ mùi hôi.</h5>
                 <p>Giá: 120,000đ/đôi</p>
-                <button class="btnService">Sử dụng</button>
+                <button onclick="buy()" class="btnService">Sử dụng</button>
             </div>
             <div class="service">
                 <img src="https://media.istockphoto.com/photos/men-in-bicycle-store-picture-id620697548?b=1&k=20&m=620697548&s=170667a&w=0&h=dU7V9bajA-k4qS11fthqYtuJLf8EgMqLOMeGXfYNwJ4=" alt="test">
                 <h4>VỆ SINH BỀ MẶT LẤY LIỀN</h4>
                 <h5>Làm sạch bằng tay từ bề mặt, đế ngoài, dây giày</h5>
                 <p>Giá: 80,000đ/đôi</p>
-                <button class="btnService">Sử dụng</button>
+                <button onclick="buy()" class="btnService">Sử dụng</button>
             </div>
             <div class="service">
                 <img src="https://media.istockphoto.com/photos/men-in-bicycle-store-picture-id620697548?b=1&k=20&m=620697548&s=170667a&w=0&h=dU7V9bajA-k4qS11fthqYtuJLf8EgMqLOMeGXfYNwJ4=" alt="test">
                 <h4>REPAINT ĐẾ</h4>
                 <h5>Mang lại màu sắc trắng sáng như mới cho đế giày bị ố vàng lâu ngày.</h5>
                 <p>Giá: 300,000đ/đôi</p>
-                <button class="btnService">Sử dụng</button>
+                <button onclick="buy()" class="btnService">Sử dụng</button>
             </div>
             <div class="service">
                 <img src="https://media.istockphoto.com/photos/men-in-bicycle-store-picture-id620697548?b=1&k=20&m=620697548&s=170667a&w=0&h=dU7V9bajA-k4qS11fthqYtuJLf8EgMqLOMeGXfYNwJ4=" alt="test">
                 <h4>VỆ SINH NHANH</h4>
                 <h5>Thực hiện nhanh trong vòng 24 tiếng.</h5>
                 <p>Giá: 150,000đ/đôi</p>
-                <button class="btnService">Sử dụng</button>
+                <button onclick="buy()" class="btnService">Sử dụng</button>
             </div>
             <div class="service">
                 <img src="https://media.istockphoto.com/photos/men-in-bicycle-store-picture-id620697548?b=1&k=20&m=620697548&s=170667a&w=0&h=dU7V9bajA-k4qS11fthqYtuJLf8EgMqLOMeGXfYNwJ4=" alt="test">
                 <h4>REPAINT THÂN</h4>
                 <h5>Sơn lại một phần hoặc toàn bộ, mang đến màu sắc mới cho giày.</h5>
                 <p>Giá: 400,000đ/đôi</p>
-                <button class="btnService">Sử dụng</button>
+                <button onclick="buy()" class="btnService">Sử dụng</button>
             </div>
 
         </div>
@@ -147,5 +147,37 @@
             </ul>
         </div>
     </footer>
+
+       <!-- Modal -->
+       <div class="modal">
+        <div class="modal-container js-modal-container">
+            <div class="modal-close">
+                <i class="fas fa-times"></i>
+            </div>
+            <div class="modal-header">
+                <i class="fas fa-shopping-cart"> </i> Xác nhận thông tin khách hàng
+            </div>
+            <div class="modal-body">
+                <label for="lb1" class="modal-lable">
+                    <i class="fas fa-user"></i>
+                    Họ và tên:
+                </label>
+                <input id="lb1" type="text" class="modal-input" placeholder="...">
+                <label for="lb2" class="modal-lable">
+                    <i class="fas fa-mobile-alt"></i>
+                    Số điện thoại:
+                </label>
+                <input id="lb2" type="text" class="modal-input" placeholder="...">
+                <button id="buy-ticket">
+                    Xác nhận <i class="fas fa-check"></i>
+                </button>
+            </div>
+            <div class="modal-footer">
+                <p class="modal-help">
+                    Need <a href="#">help?</a>
+                </p>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
